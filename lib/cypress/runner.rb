@@ -26,8 +26,6 @@ module Cypress
         require 'capybara/rails'
 
         Capybara.current_driver   = :selenium # oh, the irony....
-        Capybara.server           = :puma
-        configuration.server_port = Capybara.current_session.server.port
       end
 
       def cypress_cli
